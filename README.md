@@ -122,18 +122,11 @@ You can look full documentation on archwiki pci ovmf website (https://wiki.archl
     <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager.png" alt="virt-manager" width="640" height="640">
   </a>
 </div>
----------------------------------------------------------------------------------------------------------------------
+
 - Click create a Virtual Machines
 <div align="center">
   <a href="images/virt-manager-2.png">
     <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager-2.png" alt="virt-manager" width="640" height="640">
   </a>
 </div>
-# Configure the win11.xml
-- We have to configure the win11.xml to insert the Graphics Cards to working flawlessly, you can look on my win11.xml (https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/win11.xml)
-- 
-  
-  
 
-
-Thanks a lot to My Favorite Youtuber 'Mutahar' @Someordinarygamers, Reddit Community r/VFIO and many more in documentation.
