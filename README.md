@@ -13,7 +13,21 @@ You can look full documentation on archwiki pci ovmf website (https://wiki.archl
 ---------------------------------------------------------------------------------------------------------------------
 # Instalation
 - Make sure your processor is supported Virtualization (AMD or Intel).
-- Enable IOMMU on your Linux host. You can edit on your kernel parameter, Save it and reboot the system
+- Enable IOMMU on your Linux host. You can edit on your kernel parameter, Save it and reboot the system.
+- Add intel_iommu=on or amd_iommu=on depending on the processor you have. In my case i have amd processor.
+- ```sh
+  sudo nano /etc/default/grub
+  ```
+  ```sh
+  # GRUB boot loader configuration
+
+  GRUB_DEFAULT=0
+  GRUB_TIMEOUT=5
+  GRUB_DISTRIBUTOR="Arch"
+  GRUB_CMDLINE_LINUX_DEFAULT="quiet amd_iommu=on  resume=UUID=1ec5de3e-b9b9-4cf5-80a4-dd6361a6efda loglevel=3 audit=0"
+  GRUB_CMDLINE_LINUX=""
+  ```
+- Save the configuration and run a command
   ```sh
   sudo grub-mkconfig -o /boot/grub/grub.cfg 
   ```
