@@ -119,7 +119,7 @@ You can look full documentation on archwiki pci ovmf website (https://wiki.archl
 - First we need to install a Windows VM
   <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template](https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager.png">
+  <a href="images/virt-manager.png">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">virt-manager </h3>
