@@ -106,6 +106,13 @@ You can look full documentation on archwiki pci ovmf website (https://wiki.archl
   ```sh
   sudo systemctl start virtlogd.socket
   ```
+- After that we have to activate the default libvirt network by typing command
+  ```sh
+  sudo virsh net-autostart default
+  ```
+  ```sh
+  sudo virsh net-start default
+  ```
 
   ---------------------------------------------------------------------------------------------------------------------
 # Preparing The Virtual Machines on virt-manager
