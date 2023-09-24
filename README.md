@@ -6,7 +6,9 @@ Hello Everyone,
 Update from my project before (https://github.com/Alamputraaf/GPU-Passthrough-Nvidia).
 Im currently using HDMI Dummy and Looking Glass for remote the VM.
 
-Actually, this is my summary of installing my virtual machine, I hope you can understand it. I'm very happy with this project
+Actually, this is my summary of installing my virtual machine, I hope you can understand it. I'm very happy with this project.
+
+You can look full documentation on archwiki pci ovmf website (https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF)
 
 ---------------------------------------------------------------------------------------------------------------------
 # Instalation
@@ -72,7 +74,7 @@ Actually, this is my summary of installing my virtual machine, I hope you can un
 
   ```
   - And we done setup on vfio modules
-  # Installing virt-manager.qemu,libvirt, Networking
+# Installing virt-manager.qemu,libvirt, Networking
 - We need to install virt-manager,qemu,libvirt, and network for the virtual machines,let's install
   ```sh
   sudo pacman -S  qemu-desktop libvirt edk2-ovmf virt-manager dnsmasq
@@ -90,6 +92,12 @@ Actually, this is my summary of installing my virtual machine, I hope you can un
   ```sh
   sudo systemctl start virtlogd.socket
   ```
+
+  ---------------------------------------------------------------------------------------------------------------------
+# Preparing The Virtual Machines on virt-manager
+- Im assume you guys understand the installation on virt-manager, configure the windows vm etc, in the future  i will teach you how to do it.
+# Configure the win11.xml
+- We have to configure the win11.xml to insert the Graphics Cards to working flawlessly, you can look on my win11.xml (https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/win11.xml)
 - 
   
   
