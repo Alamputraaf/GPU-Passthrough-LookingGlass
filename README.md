@@ -122,7 +122,6 @@ You can look full documentation on archwiki pci ovmf website (https://wiki.archl
   <a href="images/virt-manager.png">
     <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager.png" alt="virt-manager" width="640" height="640">
   </a>
-  <h3 align="center">virt-manager </h3>
 </div>
 # Configure the win11.xml
 - We have to configure the win11.xml to insert the Graphics Cards to working flawlessly, you can look on my win11.xml (https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/win11.xml)
