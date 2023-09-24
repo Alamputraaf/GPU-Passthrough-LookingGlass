@@ -120,7 +120,7 @@ You can look full documentation on archwiki pci ovmf website (https://wiki.archl
   <br />
 <div align="center">
   <a href="images/virt-manager.png">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="640" height="640">
   </a>
   <h3 align="center">virt-manager </h3>
 </div>
