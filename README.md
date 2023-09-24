@@ -116,7 +116,14 @@ You can look full documentation on archwiki pci ovmf website (https://wiki.archl
 
   ---------------------------------------------------------------------------------------------------------------------
 # Preparing The Virtual Machines on virt-manager
-- Im assume you guys understand the installation on virt-manager, configure the windows vm etc, in the future  i will teach you how to do it.
+- First we need to install a Windows VM
+  <br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template](https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager.png">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+  <h3 align="center">virt-manager </h3>
+</div>
 # Configure the win11.xml
 - We have to configure the win11.xml to insert the Graphics Cards to working flawlessly, you can look on my win11.xml (https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/win11.xml)
 - 
