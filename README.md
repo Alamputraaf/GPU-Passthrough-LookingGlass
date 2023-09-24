@@ -1,10 +1,13 @@
 # GPU-Passthrough-LookingGlass
 This is guide for Laptop with Hybrid-Graphics
 # DO IT AT YOUR OWN RISK, I AM NOT RESPONSIBLE FOR ANY DAMAGE TO YOUR HARDWARE
-
+---------------------------------------------------------------------------------------------------------------------
 Hello Everyone,
 Update from my project before (https://github.com/Alamputraaf/GPU-Passthrough-Nvidia).
 Im currently using HDMI Dummy and Looking Glass for remote the VM.
+
+Actually, this is my summary of installing my virtual machine, I hope you can understand it. I'm very happy with this project
+
 ---------------------------------------------------------------------------------------------------------------------
 # Instalation
 - Make sure your processor is supported Virtualization (AMD or Intel).
@@ -53,7 +56,43 @@ Im currently using HDMI Dummy and Looking Glass for remote the VM.
   ```sh
   sudo mkinitcpio -p linux
   ```
+- Make sure your Graphics Cards Kernel Driver using vfio-pci
+  ```sh
+  lspci -nnk
+  ```
+  ```sh
+  01:00.0 VGA compatible controller [0300]: NVIDIA Corporation TU117M [10de:1f99] (rev a1)
+        Subsystem: Lenovo TU117M [17aa:3a43]
+        Kernel driver in use: vfio-pci
+        Kernel modules: nouveau, nvidia_drm, nvidia
+  01:00.1 Audio device [0403]: NVIDIA Corporation Device [10de:10fa] (rev a1)
+        Subsystem: NVIDIA Corporation Device [10de:10fa]
+        Kernel driver in use: vfio-pci
+        Kernel modules: snd_hda_intel
+
+  ```
+  - And we done setup on vfio modules
+  # Installing virt-manager.qemu,libvirt, Networking
+- We need to install virt-manager,qemu,libvirt, and network for the virtual machines,let's install
+  ```sh
+  sudo pacman -S  qemu-desktop libvirt edk2-ovmf virt-manager dnsmasq
+  ```
+- First we Enable and start the libvirt service and second is logging for virtlogd by typing a command
+  ```sh
+  sudo systemctl enable libvirtd.service
+  ```
+  ```sh
+  sudo systemctl start libvirtd.service
+  ```
+  ```sh
+  sudo systemctl enable virtlogd.socket
+  ```
+  ```sh
+  sudo systemctl start virtlogd.socket
+  ```
 - 
+  
+  
 
 
 Thanks a lot to My Favorite Youtuber 'Mutahar' @Someordinarygamers, Reddit Community r/VFIO and many more in documentation.
