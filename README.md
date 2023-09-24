@@ -1,5 +1,6 @@
 # GPU-Passthrough-LookingGlass
-This is guide for Laptop with Hybrid-Graphics
+- This is guide for Laptop with Mux Graphics
+- Im using Arch Linux, Manjaro users can work as well.
 # DO IT AT YOUR OWN RISK, I AM NOT RESPONSIBLE FOR ANY DAMAGE TO YOUR HARDWARE
 ---------------------------------------------------------------------------------------------------------------------
 Hello Everyone,
@@ -123,10 +124,43 @@ You can look full documentation on archwiki pci ovmf website (https://wiki.archl
   </a>
 </div>
 
-- Click create a Virtual Machines
+- Click create a Virtual Machines.
 <div align="center">
   <a href="images/virt-manager-2.png">
     <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager-2.png" alt="virt-manager" width="640" height="640">
   </a>
 </div>
 
+- Choose your iso file, for instance im installing Windows 11, you can go whatever you want.
+<div align="center">
+  <a href="images/virt-manager-3.png">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager-3.png" alt="virt-manager" width="640" height="640">
+  </a>
+</div>
+
+- After that, you can give the CPUs and The RAM for Windows VM, For example I have 16 GB RAM, I want to give 8GB and 8 CPUs
+- Remember, the CPUs is may be different for you, i have 6 cores with 12 threads.
+- I want to give 8 CPUs to Windows 11 and the rest 4 Cores for the Linux.
+- You can check your total CPUs by typing a command
+  ```sh
+  lscpu -e
+  CPU NODE SOCKET CORE L1d:L1i:L2:L3 ONLINE    MAXMHZ    MINMHZ       MHZ
+  0    0      0    0 0:0:0:0          yes 3000.0000 1400.0000 1473.9919
+  1    0      0    0 0:0:0:0          yes 3000.0000 1400.0000 3000.0000
+  2    0      0    1 1:1:1:0          yes 3000.0000 1400.0000 3000.0000
+  3    0      0    1 1:1:1:0          yes 3000.0000 1400.0000 1397.4919
+  4    0      0    2 2:2:2:0          yes 3000.0000 1400.0000 3000.0000
+  5    0      0    2 2:2:2:0          yes 3000.0000 1400.0000 3000.0000
+  6    0      0    3 4:4:4:1          yes 3000.0000 1400.0000 3000.0000
+  7    0      0    3 4:4:4:1          yes 3000.0000 1400.0000 3000.0000
+  8    0      0    4 5:5:5:1          yes 3000.0000 1400.0000 1559.7889
+  9    0      0    4 5:5:5:1          yes 3000.0000 1400.0000 3000.0000
+   10    0      0    5 6:6:6:1          yes 3000.0000 1400.0000 3000.0000
+   11    0      0    5 6:6:6:1          yes 3000.0000 1400.0000 3000.0000
+
+  ```
+  <div align="center">
+  <a href="images/virt-manager-4.png">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager-4.png" alt="virt-manager" width="640" height="640">
+  </a>
+</div>
