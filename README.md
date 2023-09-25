@@ -12,7 +12,7 @@ Actually, this is my summary of installing my virtual machine, I hope you can un
 You can look full documentation on archwiki pci ovmf website (https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF)
 
 ---------------------------------------------------------------------------------------------------------------------
-# Instalation
+# Installation
 - Make sure your processor is supported Virtualization (AMD or Intel).
 - Enable IOMMU on your Linux host. You can edit on your kernel parameter, Save it and reboot the system.
 - Add intel_iommu=on or amd_iommu=on depending on the processor you have. In my case i have amd processor.
@@ -89,7 +89,7 @@ You can look full documentation on archwiki pci ovmf website (https://wiki.archl
 
   ```
   - And we done setup on vfio modules
-# Installing virt-manager.qemu,libvirt, Networking
+# Installing Virt-Manager, Qemu, Libvirt, and Networking 
 - We need to install virt-manager,qemu,libvirt, and network for the virtual machines,let's install
   ```sh
   sudo pacman -S  qemu-desktop libvirt edk2-ovmf virt-manager dnsmasq
