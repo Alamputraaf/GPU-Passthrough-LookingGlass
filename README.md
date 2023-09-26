@@ -4,7 +4,8 @@
 # DO IT AT YOUR OWN RISK, I AM NOT RESPONSIBLE FOR ANY DAMAGE TO YOUR HARDWARE
 ---------------------------------------------------------------------------------------------------------------------
 Hello Everyone,
-Update from my project before (https://github.com/Alamputraaf/GPU-Passthrough-Nvidia).
+Update from my project before https://github.com/Alamputraaf/GPU-Passthrough-Nvidia.
+
 Im currently using HDMI Dummy and Looking Glass for remote the VM.
 
 Actually, this is my summary of installing my virtual machine, I hope you can understand it. I'm very happy with this project.
@@ -12,6 +13,13 @@ Actually, this is my summary of installing my virtual machine, I hope you can un
 You can look full documentation on archwiki pci ovmf website (https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF)
 
 ---------------------------------------------------------------------------------------------------------------------
+# Preparation
+- We need Windows 10 ISO or Windows 11 ISO for official Microsoft Website.
+- For this tutorial, im using Windows 11.
+- Windows 11 ISO (https://www.microsoft.com/en-gb/software-download/windows11)
+- Windows 10 ISO (https://www.microsoft.com/en-gb/software-download/windows10ISO)
+- Virtio Driver ISO (https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md)
+
 # Installation
 - Make sure your processor is supported Virtualization (AMD or Intel).
 - Enable IOMMU on your Linux host. You can edit on your kernel parameter, Save it and reboot the system.
@@ -171,3 +179,64 @@ You can look full documentation on archwiki pci ovmf website (https://wiki.archl
     <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager-5.png" alt="virt-manager" width="640" height="640">
   </a>
 </div>
+
+- Create a name for the VM, mine is "win11-2", but yours is "win11".
+- and don't forget to customize configuration before install, that's important.
+  <div align="center">
+  <a href="images/virt-manager-6.png">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager-6.png" alt="virt-manager" width="640" height="640">
+  </a>
+</div>
+
+- In "Overview" menu, you have to edit Chipset and the Firmware. Make sure you choose like mine
+    <div align="center">
+  <a href="images/virt-manager-gui-1.png">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager-gui-1.png" alt="virt-manager-gui" width="940" height="640">
+  </a>
+</div>
+
+- For the CPU, Im using Ryzen 5 4600 H with 6 cores with 12 threads, meaning i have total 12 CPUs.
+- We have to make sure the VM running Hyperthreading. So i have to set 1 Socket, 4 Cores, 2 Threads, and the total we give to the VM is 8 CPUs.
+     <div align="center">
+  <a href="images/virt-manager-gui-2.png">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager-gui-2.png" alt="virt-manager-gui" width="940" height="640">
+  </a>
+</div>
+- Don't forget to checkmark "Enable Shared Memory", because we using Looking-Glass and Spice Sound on the VM to Working.
+- Im giving 8GB of my ram to the VM. You may be different.
+<div align="center">
+  <a href="images/virt-manager-gui-3.png">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager-gui-3.png" alt="virt-manager-gui" width="537" height="294">
+  </a>
+</div>
+
+- For the Disk, make sure you Change "SATA" to "Virtio", this configuration is making the VM running Faster than SATA Drive.
+  <div align="center">
+  <a href="images/virt-manager-gui-4.png">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager-gui-4.png" alt="virt-manager-gui" width="537" height="294">
+  </a>
+</div>
+
+- We have to add "Virtio" ISO Driver, so click Add Hardware > Select Custom Storage > Manage > Browse Local > "Select the Virtio ISO"
+ <div align="center">
+  <a href="images/virt-manager-gui-5.png">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager-gui-5.png" alt="virt-manager-gui" width="1262" height="536">
+  </a>
+</div>
+
+- Change Device Type "SATA" to "CDROM-Device", and Bus Type = "SATA"
+   <div align="center">
+  <a href="images/virt-manager-gui-6.png">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager-gui-6.png" alt="virt-manager-gui" width="507" height="380">
+  </a>
+</div>
+
+- For Boot Options, we have to checkmarks Virtio Disk, SATA CDROM 1, and SATA CDROM 2
+    <div align="center">
+  <a href="images/virt-manager-gui-7.png">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager-gui-7.png" alt="virt-manager-gui" width="477" height="367">
+  </a>
+</div>
+
+-
+-
