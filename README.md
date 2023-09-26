@@ -164,3 +164,10 @@ You can look full documentation on archwiki pci ovmf website (https://wiki.archl
     <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager-4.png" alt="virt-manager" width="640" height="640">
   </a>
 </div>
+
+- Give Storage to VM, im giving 25 G for example
+  <div align="center">
+  <a href="images/virt-manager-5.png">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager-5.png" alt="virt-manager" width="640" height="640">
+  </a>
+</div>
