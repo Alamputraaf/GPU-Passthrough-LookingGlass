@@ -4,7 +4,7 @@
 
 # GOAL
 - Working Windows VM with GPU Passthrough and Remote With Looking Glass
-  <a href="images/virt-manager-gui-3.png">
+  <a href="images/honkai.png">
     <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/honkai.png" alt="honkaiexample" width="720" height="450">
   </a>
   
