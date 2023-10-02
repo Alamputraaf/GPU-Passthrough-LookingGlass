@@ -5,7 +5,7 @@
 # GOAL
 - Working Windows VM with GPU Passthrough and Remote With Looking Glass
   <a href="images/honkai.png">
-    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/honkai.png" alt="honkaiexample" width="720" height="450">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/honkai.png" alt="honkaiexample" width="1080" height="450">
   </a>
   
 # DO IT AT YOUR OWN RISK, I AM NOT RESPONSIBLE FOR ANY DAMAGE TO YOUR HARDWARE
