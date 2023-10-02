@@ -16,9 +16,9 @@ You can look full documentation on archwiki pci ovmf website (https://wiki.archl
 # Preparation
 - We need Windows 10 ISO or Windows 11 ISO for official Microsoft Website.
 - For this tutorial, im using Windows 11.
-- Windows 11 ISO (https://www.microsoft.com/en-gb/software-download/windows11)
-- Windows 10 ISO (https://www.microsoft.com/en-gb/software-download/windows10ISO)
-- Virtio Driver ISO (https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md)
+- Windows 11 ISO https://www.microsoft.com/en-gb/software-download/windows11
+- Windows 10 ISO https://www.microsoft.com/en-gb/software-download/windows10ISO
+- Virtio Driver ISO https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md
 
 # Installation
 - Make sure your processor is supported Virtualization (AMD or Intel).
