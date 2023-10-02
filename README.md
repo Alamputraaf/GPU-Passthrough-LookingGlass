@@ -10,7 +10,7 @@ Im currently using HDMI Dummy and Looking Glass for remote the VM.
 
 Actually, this is my summary of installing my virtual machine, I hope you can understand it. I'm very happy with this project.
 
-You can look full documentation on archwiki pci ovmf website (https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF)
+You can look full documentation on Arch Wiki pci ovmf website https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF
 
 ---------------------------------------------------------------------------------------------------------------------
 # Preparation
