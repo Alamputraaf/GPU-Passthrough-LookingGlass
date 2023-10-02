@@ -1,6 +1,13 @@
 # GPU-Passthrough-LookingGlass
 - This is guide for Laptop with Mux Graphics
 - Im using Arch Linux, Manjaro users can work as well.
+
+# GOAL
+- Working Windows VM with GPU Passthrough and Remote With Looking Glass
+  <a href="images/virt-manager-gui-3.png">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/honkai.png" alt="honkaiexample" width="1080" height="1920">
+  </a>
+  
 # DO IT AT YOUR OWN RISK, I AM NOT RESPONSIBLE FOR ANY DAMAGE TO YOUR HARDWARE
 ---------------------------------------------------------------------------------------------------------------------
 Hello Everyone,
