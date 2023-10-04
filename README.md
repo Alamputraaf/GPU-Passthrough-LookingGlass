@@ -249,5 +249,44 @@ You can look full documentation on Arch Wiki pci ovmf website https://wiki.archl
   </a>
 </div>
 
--
--
+- And finally, We have to add TPM Modules 2.0 for Windows Installation. 
+<div align="center">
+  <a href="images/virt-manager-gui-8.png">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/virt-manager-gui-8.png" alt="virt-manager-gui" width="477" height="367">
+  </a>
+</div>
+
+# Installing Windows VM
+- I assume you understand Installing Windows VM.
+- Tech Tips, "Time & Currency Format", change to  English (World), this choice will bloat "Almost" Windows Apps.
+<div align="center">
+  <a href="images/vm-instalation-1.png">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/vm-instalation-1.png" alt="virt-manager-gui" width="424" height="626">
+  </a>
+</div>
+- When you want to install Windows VM, you realize the partition don't show up. We have to load the VFIO ISO Drivers. 
+div align="center">
+  <a href="images/vm-instalation-2.png">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/vm-instalation-2.png" alt="virt-manager-gui" width="424" height="626">
+  </a>
+</div>
+- Choose the Driver based your Windows Version, Im using Windows 11.
+div align="center">
+  <a href="images/vm-instalation-3.png">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/vm-instalation-3.png" alt="virt-manager-gui" width="424" height="626">
+  </a>
+</div>
+- Select Redhat Virtio SCSI Drivers
+div align="center">
+  <a href="images/vm-instalation-4.png">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/vm-instalation-4.png" alt="virt-manager-gui" width="424" height="626">
+  </a>
+</div>
+- And We done Preparing Windows VM. After this step, we need to configure Windows XML.
+div align="center">
+  <a href="images/vm-instalation-5.png">
+    <img src="https://github.com/Alamputraaf/GPU-Passthrough-LookingGlass/blob/main/images/vm-instalation-5.png" alt="virt-manager-gui" width="424" height="626">
+  </a>
+</div>
+
+# ss
